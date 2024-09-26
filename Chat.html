@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="I'm mohamed salem a web designer and web development
+          and frontend development
+          and React development
+          - We create the websites you want according to your taste and choice in proportion to your idea with a professional design and high quality
+          - We offer you to write your website content professionally
+          - Your websites will be created in a (responsive) format on screens of different sizes
+          - You have completed many projects 100%"
+    />
+
+    <meta
+      name="keywords"
+      content="
+    web,
+    web design,
+    web development,
+    web developer,
+    frontend developer,
+    backend developer,
+"
+    />
+
+    <meta name="author" content="Mohamed Salem" />
+
+    <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>مركز العرباوي التعليمي</title>
+
+    <link rel="icon" href="assets/images/Logo-Arabawy.png" type="" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link href="assets/css/datatables.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/rtl.css" />
+    <style>
+      :root {
+        --main-color: #1d4086;
+        --bg-color: #fff;
+      }
+    </style>
+    <!-- ================================================================================================================= -->
+  </head>
+
+  <body>
+    <!-- ================================================================================================================= -->
+
+    <main>
+      <section>
+        <div class="box-dashboard">
+          <div class="d-flex align-items-start">
+            <div id="mySidebar" class="sidebar">
+              <div class="sidebar-header">
+                <a href="" class="link-img-logo-dashboard"
+                  ><img src="assets/images/Logo-Arabawy.png" alt=""
+                /></a>
+                <button class="toggle-btn" onclick="toggleNav()">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+
+              <div class="mt-3 box-links-items">
+                <a href="Panel-control.html" class="btn-link-item">
+                  <i class="fa-solid fa-list"></i><span>لوحة التحكم</span>
+                </a>
+                <a href="Teachers.html" class="btn-link-item">
+                  <i class="fa-regular fa-user"></i><span>المدرسين</span>
+                </a>
+                <a href="Students.html" class="btn-link-item">
+                  <i class="fa-light fa-users"></i><span>الطلاب</span>
+                </a>
+                <a href="Subscriptions.html" class="btn-link-item">
+                  <i class="fa-regular fa-receipt"></i><span>الاشتراكات</span>
+                </a>
+                <a href="Videos.html" class="btn-link-item">
+                  <i class="fa-regular fa-video"></i><span>الفيديوهات</span>
+                </a>
+                <a href="Roles-Powers.html" class="btn-link-item">
+                  <i class="fa-regular fa-suitcase"></i
+                  ><span>الأدوار و الصلاحيات</span>
+                </a>
+                <a href="Users.html" class="btn-link-item">
+                  <i class="fa-regular fa-user-plus"></i><span>المستخدمين</span>
+                </a>
+              </div>
+            </div>
+            <div id="main">
+              <!-- ------------------------------------------------------- -->
+              <nav>
+                <div class="box-nav">
+                  <div class="box-input-search">
+                    <input
+                      type="search"
+                      class="form-control"
+                      placeholder="ما الذي تبحث عنه ...."
+                    />
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                  </div>
+                  <div class="box-input-search-mob">
+                    <button
+                      type="button"
+                      class="btn btn-search-mob"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="box-bell-comment">
+                      <a
+                        href="Notices.html"
+                        class="box-bell link-comment-Notices"
+                      >
+                        <span class="position-relative"
+                          ><i class="fa-regular fa-bell"></i
+                          ><span class="number-bell">3</span></span
+                        >
+                      </a>
+                      <a
+                        href="Chat.html"
+                        class="box-comment link-comment-Notices active"
+                      >
+                        <span class="position-relative">
+                          <i class="fa-regular fa-comment-dots"></i
+                          ><span class="number-comment">3</span></span
+                        >
+                      </a>
+                    </div>
+                    <div class="box-dropdown-prof">
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <div class="d-flex align-items-center gap-2">
+                            <div class="box-avatar-prof">
+                              <img src="assets/images/test/avatar.png" alt="" />
+                            </div>
+                            <div class="box-text-prof">
+                              <h3>محمد سالم الصادق</h3>
+                              <span>مسؤول</span>
+                            </div>
+                          </div>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <!-- ------------------------------- -->
+
+              <!-- Modal search-->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        ما الذي تبحث عنه
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="position-relative">
+                        <input
+                          type="search"
+                          class="form-control input-search-Modal"
+                          placeholder="ما الذي تبحث عنه ...."
+                        />
+                        <!-- <button class="btn btn-search-Modal"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                        <div class="mt-3">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            الغاء
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            حفظ
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------------------------------------------------- -->
+
+
+              <section>
+                <div class="box-Chat-all">
+                  <section>
+                    <div class=" overflow-hidden">
+                      <div class="box-chat">
+                        <div class="row h-100 g-lg-3 g-2">
+                          <div
+                            class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 h-100"
+                          >
+                            <div class="box-all-name">
+                              <div class="box-checkbox-delete">
+                                <div
+                                  class="d-flex align-items-center gap-1 gap-lg-3"
+                                >
+                                  <input
+                                    class="form-check-input indexCheckbox"
+                                    type="checkbox"
+                                    value=""
+                                    id="indexCheckbox"
+                                  />
+                                  <label
+                                    class="form-check-label label-checkbox-index"
+                                    for="indexCheckbox"
+                                  >
+                                    الرسائل
+                                  </label>
+                                </div>
+                                <button class="btn btn-delete-user">
+                                  <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                              </div>
+                              <div class="box-users-chat">
+                                <div class="item-user-chat" data-user-chat="1">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/avatar.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>
+                                          لوريم ايبسوم هو نموذج افتراضي يوضع في
+                                          التصاميم لتعرض على العميل ليتصور طريقه
+                                          وضع النصوص بالتصاميم
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+
+                                <div class="item-user-chat" data-user-chat="2">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/Frame 10464.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>كيف حالك</p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+
+                                <div class="item-user-chat" data-user-chat="3">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/avatar.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>
+                                          لوريم ايبسوم هو نموذج افتراضي يوضع في
+                                          التصاميم لتعرض على العميل ليتصور طريقه
+                                          وضع النصوص بالتصاميم
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+
+                                <div class="item-user-chat" data-user-chat="4">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/Frame 10464.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>كيف حالك</p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="item-user-chat">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/avatar.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>
+                                          لوريم ايبسوم هو نموذج افتراضي يوضع في
+                                          التصاميم لتعرض على العميل ليتصور طريقه
+                                          وضع النصوص بالتصاميم
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+
+                                <div class="item-user-chat">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/Frame 10464.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>كيف حالك</p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="item-user-chat">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/avatar.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>
+                                          لوريم ايبسوم هو نموذج افتراضي يوضع في
+                                          التصاميم لتعرض على العميل ليتصور طريقه
+                                          وضع النصوص بالتصاميم
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+
+                                <div class="item-user-chat">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/Frame 10464.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>كيف حالك</p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="item-user-chat">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/avatar.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>
+                                          لوريم ايبسوم هو نموذج افتراضي يوضع في
+                                          التصاميم لتعرض على العميل ليتصور طريقه
+                                          وضع النصوص بالتصاميم
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+
+                                <div class="item-user-chat">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/Frame 10464.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>كيف حالك</p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="item-user-chat">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/avatar.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>
+                                          لوريم ايبسوم هو نموذج افتراضي يوضع في
+                                          التصاميم لتعرض على العميل ليتصور طريقه
+                                          وضع النصوص بالتصاميم
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+
+                                <div class="item-user-chat">
+                                  <input
+                                    class="form-check-input input-checkbox-user"
+                                    name="users"
+                                    type="checkbox"
+                                    value=""
+                                  />
+                                  <button class="btn-item-user-chat">
+                                    <div
+                                      class="d-lg-flex d-inline-block align-items-center gap-2"
+                                    >
+                                      <div class="box-img-user-chat">
+                                        <img
+                                          src="assets/images/test/Frame 10464.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="">
+                                        <h2>محمد سالم الصادق</h2>
+                                        <p>كيف حالك</p>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="d-flex flex-column align-items-end"
+                                    >
+                                      <span class="item-time">11:24 PM</span>
+                                      <div class="item-number">3</div>
+                                    </div>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12  "
+                          >
+                            <div class="box-Carat-Auction-chat">
+                              <div>
+                                <img
+                                  src="assets/images/Logo-Arabawy.png"
+                                  alt=""
+                                />
+                                <h1>محادثاتك في مكان واحد</h1>
+                                <p>
+                                  إرسال واستقبال الرسائل بين الطلاب والمدرسين في
+                                  مكان واحد
+                                </p>
+                              </div>
+                            </div>
+                            <!-- --------------------------------------- -->
+                            <div class="box-Carat-Messages hidden">
+                              <div>
+                                <div class="d-flex align-items-center gap-3">
+                                  <button class="btn btn-arrow-back">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                  </button>
+                                  <h2>Obaid Al Marzouki</h2>
+                                </div>
+                              </div>
+
+                              <div class="box-Messages mt-3">
+                                <!-- user-Messages -->
+                                <div class="user-Messages">
+                                  <div class="box-img-Avatar-Messages">
+                                    <img
+                                      src="assets/images/test/avatar.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <div class="box-text-Messages">
+                                      <p>مرحبًا، هل بإمكانك مساعدتي؟</p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- user-Messages-2 -->
+                                <div class="user-Messages-2">
+                                  <div class="box-img-Avatar-Messages">
+                                    <img
+                                      src="assets/images/test/avatar.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <div class="box-text-Messages-2">
+                                      <p>كيف حالك؟</p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                    <div class="box-text-Messages-2">
+                                      <p>كيف يمكنني مساعدتك اليوم؟</p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- user-Messages -->
+                                <div class="user-Messages">
+                                  <div class="box-img-Avatar-Messages">
+                                    <img
+                                      src="assets/images/test/avatar.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <div class="box-text-Messages">
+                                      <p>
+                                        كم عدد دروس مادة الأحياء للصف الثاني
+                                        الثانوي؟
+                                      </p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                    <div class="box-text-Messages">
+                                      <p>وهل يوجد اختبارات يوم الجمعة؟</p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- user-Messages-2 -->
+                                <div class="user-Messages-2">
+                                  <div class="box-img-Avatar-Messages">
+                                    <img
+                                      src="assets/images/test/avatar.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <div class="box-text-Messages-2">
+                                      <p>كيف حالك؟</p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                    <div class="box-text-Messages-2">
+                                      <p>كيف يمكنني مساعدتك اليوم؟</p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- user-Messages -->
+                                <div class="user-Messages">
+                                  <div class="box-img-Avatar-Messages">
+                                    <img
+                                      src="assets/images/test/avatar.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <div class="box-text-Messages">
+                                      <p>مرحبًا، هل بإمكانك مساعدتي؟</p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- user-Messages-2 -->
+                                <div class="user-Messages-2">
+                                  <div class="box-img-Avatar-Messages">
+                                    <img
+                                      src="assets/images/test/avatar.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <div class="box-text-Messages-2">
+                                      <p>كيف حالك؟</p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                    <div class="box-text-Messages-2">
+                                      <p>كيف يمكنني مساعدتك اليوم؟</p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- user-Messages -->
+                                <div class="user-Messages">
+                                  <div class="box-img-Avatar-Messages">
+                                    <img
+                                      src="assets/images/test/avatar.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <div class="box-text-Messages">
+                                      <p>
+                                        كم عدد دروس مادة الأحياء للصف الثاني
+                                        الثانوي؟
+                                      </p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                    <div class="box-text-Messages">
+                                      <p>وهل يوجد اختبارات يوم الجمعة؟</p>
+                                      <span>09:25 AM</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="box-form-Messages">
+                                <form action="">
+                                  <div class="d-flex align-items-center gap-3">
+                                    <div class="position-relative w-100">
+                                      <input
+                                        type="text"
+                                        class="form-control input-Messages"
+                                        placeholder="Start typing..."
+                                      />
+
+                                      <label
+                                        for="file-upload"
+                                        class="custom-file-upload"
+                                      >
+                                        <i class="fa-solid fa-paperclip"></i>
+                                      </label>
+                                      <input
+                                        id="file-upload"
+                                        type="file"
+                                        class="input-file-Messages"
+                                      />
+                                    </div>
+                                    <button class="btn btn-send-Messages">
+                                      <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ================================================================================================================= -->
+    <!-- ================================================================================================================= -->
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- ================================================================================================================= -->
+  </body>
+</html>

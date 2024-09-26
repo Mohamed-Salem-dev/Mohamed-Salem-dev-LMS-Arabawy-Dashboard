@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="I'm mohamed salem a web designer and web development
+          and frontend development
+          and React development
+          - We create the websites you want according to your taste and choice in proportion to your idea with a professional design and high quality
+          - We offer you to write your website content professionally
+          - Your websites will be created in a (responsive) format on screens of different sizes
+          - You have completed many projects 100%"
+    />
+
+    <meta
+      name="keywords"
+      content="
+    web,
+    web design,
+    web development,
+    web developer,
+    frontend developer,
+    backend developer,
+"
+    />
+
+    <meta name="author" content="Mohamed Salem" />
+
+    <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>مركز العرباوي التعليمي</title>
+
+    <link rel="icon" href="assets/images/Logo-Arabawy.png" type="" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link
+      href="https://cdn.datatables.net/v/dt/dt-2.1.5/datatables.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/rtl.css" />
+    <style>
+      :root {
+        --main-color: #1d4086;
+        --bg-color: #fff;
+      }
+    </style>
+    <!-- ================================================================================================================= -->
+  </head>
+
+  <body>
+    <!-- ================================================================================================================= -->
+
+    <main>
+      <section>
+        <div class="box-dashboard">
+          <div class="d-flex align-items-start">
+            <div id="mySidebar" class="sidebar">
+              <div class="sidebar-header">
+                <a href="" class="link-img-logo-dashboard"
+                  ><img src="assets/images/Logo-Arabawy.png" alt=""
+                /></a>
+                <button class="toggle-btn" onclick="toggleNav()">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+
+              <div class="mt-3 box-links-items">
+                <a href="Panel-control-Students.html" class="btn-link-item">
+                  <i class="fa-solid fa-list"></i><span>لوحة التحكم</span>
+                </a>
+
+                <a href="" class="btn-link-item">
+                  <i class="fa-light fa-user"></i><span>المدرسين</span>
+                </a>
+                <a
+                  href="All-materials-Students.html"
+                  class="btn-link-item active"
+                >
+                  <i class="fa-regular fa-receipt"></i><span>جميع المواد</span>
+                </a>
+
+                <a href="Users.html" class="btn-link-item">
+                  <i class="fa-regular fa-file-lines"></i
+                  ><span>الاختبارات</span>
+                </a>
+              </div>
+            </div>
+            <div id="main">
+              <!-- ------------------------------------------------------- -->
+              <nav>
+                <div class="box-nav">
+                  <div class="box-input-search">
+                    <input
+                      type="search"
+                      class="form-control"
+                      placeholder="ما الذي تبحث عنه ...."
+                    />
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                  </div>
+                  <div class="box-input-search-mob">
+                    <button
+                      type="button"
+                      class="btn btn-search-mob"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="box-bell-comment">
+                      <a
+                        href="Notices.html"
+                        class="box-bell link-comment-Notices"
+                      >
+                        <span class="position-relative"
+                          ><i class="fa-regular fa-bell"></i
+                          ><span class="number-bell">3</span></span
+                        >
+                      </a>
+                      <a
+                        href="Chat.html"
+                        class="box-comment link-comment-Notices"
+                      >
+                        <span class="position-relative">
+                          <i class="fa-regular fa-comment-dots"></i
+                          ><span class="number-comment">3</span></span
+                        >
+                      </a>
+                    </div>
+                    <div class="box-dropdown-prof">
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <div class="d-flex align-items-center gap-2">
+                            <div class="box-avatar-prof">
+                              <img src="assets/images/test/avatar.png" alt="" />
+                            </div>
+                            <div class="box-text-prof">
+                              <h3>محمد سالم الصادق</h3>
+                              <span>مسؤول</span>
+                            </div>
+                          </div>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+              <!-- ------------------------------- -->
+
+              <!-- Modal search-->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        ما الذي تبحث عنه
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="position-relative">
+                        <input
+                          type="search"
+                          class="form-control input-search-Modal"
+                          placeholder="ما الذي تبحث عنه ...."
+                        />
+                        <!-- <button class="btn btn-search-Modal"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                        <div class="mt-3">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            الغاء
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            حفظ
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------------------------------------------------- -->
+              <section>
+                <div
+                  class="box-body-Panel-control bg-white box-All-materials-Students"
+                >
+                  <div class="box-titel-dec mb-4">
+                    <span class="link-retn" 
+                      ><a href="All-materials-Students.html">جيمع المواد </a>
+                      <i class="fa-solid fa-chevron-left"></i> الكيمياء
+                    </span>
+                    <h2 class="mt-3">مدرسين مادة الكيمياء</h2>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                      <a href="details-Teachers-Students.html" class="item-Subject-teachers overflow-hidden">
+                        <img class="w-100 d-block" src="assets/images/test/Teachers-4.png" alt="">
+                        <div class="box-Subscribed-teachers">
+  
+                          <span class="Subscribed-teachers">تم الاشتراك</span>
+                        </div>
+                        
+                      </a>
+                      <div class="text-item-Subject-teachers">
+                        <h2>كريم تهامى</h2>
+                        <h3>مدرس الكيمياء</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ================================================================================================================= -->
+    <!-- ================================================================================================================= -->
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-2.1.5/datatables.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- ================================================================================================================= -->
+  </body>
+</html>
